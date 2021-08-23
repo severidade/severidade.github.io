@@ -28,8 +28,7 @@ ul.habilidades_lista {
     margin-left: 20px;
 }
 ul.habilidades_lista li:nth-child(odd){
-    background: #ff870730;
-    
+    background: #9a979330;
 }
 img.avatar {
     border-radius: 0  ;
@@ -40,7 +39,7 @@ img.avatar {
     position: absolute;
     right: 0;  
 }
-.hero_name, .hero_presentation, .content {
+.hero_name, .hero_presentation, .menu_social, .content {
     width: 60vw;
     margin: auto;
     position: relative;
@@ -67,3 +66,30 @@ img.avatar {
     font-weight: 900;
     color: #ff8707;
 }
+/* Botoes redes sociais */
+
+.menu_social ul{
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+a[class^="social"]{
+    display: block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    text-indent: -1000%;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 55%;
+}
+a[class^="social"]:hover { opacity: 100%;}
+
+a.social_linkedin { background-image: url(../img/logos/linkedin.png);}
+a.social_github { background-image: url(../img/logos/github.png);}
+a.social_codpen { background-image: url(../img/logos/codpen.svg); background-size: 90%;}
+a.social_behance { background-image: url(../img/logos/behance.png);  background-size: 100%;}
